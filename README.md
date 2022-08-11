@@ -4,6 +4,7 @@ Simple Discord Bot
 The bot takes use the discord api and various random api's for various commands that I thought would be funny/somewhat useful to have within our friend group's server
 
 Fuctions:
+
 /hello - bot responds to the user with a greeting
 
 /mango - gives a random picture of Emily Doan's dog
