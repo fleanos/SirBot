@@ -12,4 +12,4 @@ Fuctions:
 
 /bored - gives user an activity to do, uses a api that provides random activites
 
-/wooper - gives random picture of wooper, with pictures socured from a pokemon api
+/wooper - gives random picture of wooper, with pictures sourced from a pokemon api
