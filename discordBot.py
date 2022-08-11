@@ -6,11 +6,13 @@ SirBotToken = "Discord Api Token"
 
 bot = discord.Bot()
 
+def currentDateTime():
+    return datetime.now().strftime("%d/%m/%Y %H:%M:%S")
+
 @bot.event
 async def on_ready():
     print(f"We have logged in as {bot.user}")
 
-#discord server id's
 servers = ["831609556571258891", "694031693736312932"]
 
 @bot.slash_command(guild_ids = servers, name = "hello", description = "Greet SirBot")
@@ -35,7 +37,7 @@ async def mango(ctx):
     2:"https://cdn.discordapp.com/attachments/833072006177488949/1006646303322820728/lp_image.jpg", 
     3: "https://cdn.discordapp.com/attachments/833072006177488949/1006644237317705860/lp_image.jpg",
     }
-    random.seed(datetime.now())
+    random.seed(currentDateTime())
     url = dic[random.randrange(1, len(dic), 1)]
     embed.set_image(url = url)
     await ctx.respond(embed = embed)
@@ -59,7 +61,7 @@ async def wooper(ctx):
     openFile = open( fileName, "rb")
     wooperPNGs = pickle.load(openFile)
     openFile.close()
-    random.seed(datetime.now())
+    random.seed(currentDateTime())
     img = wooperPNGs[random.randrange(1, len(wooperPNGs), 1)]
     embed = discord.Embed(title = "Wooper")
     embed.set_image(url = img)
