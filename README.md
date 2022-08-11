@@ -1,0 +1,2 @@
+# SirBot
+Simple Discord Bot
