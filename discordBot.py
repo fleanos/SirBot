@@ -57,7 +57,7 @@ async def bored(ctx):
 
 @bot.slash_command(guild_ids = servers, name = "wooper", description = "random wooper picture")
 async def wooper(ctx):
-    fileName = "Disocrd Bot\wooperPNG.pkl"
+    fileName = "Disocrd Bot\wooperPNG.pkl" #change relative path if needed
     openFile = open( fileName, "rb")
     wooperPNGs = pickle.load(openFile)
     openFile.close()
