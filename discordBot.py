@@ -2,7 +2,7 @@ from turtle import title
 import discord, requests, random, pickle
 from datetime import datetime
 
-SirBotToken = "MTAwNjcwMjYyMDk5MzM4ODY2NA.GsMttE.nzEaCWPYIK1UfBtWUFmMhxWjU1kN1ty-Yyprrg"
+SirBotToken = "Discord Api Token"
 
 bot = discord.Bot()
 
@@ -10,6 +10,7 @@ bot = discord.Bot()
 async def on_ready():
     print(f"We have logged in as {bot.user}")
 
+#discord server id's
 servers = ["831609556571258891", "694031693736312932"]
 
 @bot.slash_command(guild_ids = servers, name = "hello", description = "Greet SirBot")
