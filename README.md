@@ -1,5 +1,4 @@
 # SirBot
-Simple Discord Bot
 
 The bot is made with use of python and using the discord api and various random api's for various commands that I thought would be funny/somewhat useful to have within our friend group's server
 
