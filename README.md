@@ -6,7 +6,7 @@ Fuctions:
 
 /hello - bot responds to the user with a greeting
 
-/mango - gives a random picture of Emily Doan's dog
+/mango - gives a random picture of mango, the only dog ill ever love
 
 /kanye - gives a kanye quote, uses api for kanye quotes
 
